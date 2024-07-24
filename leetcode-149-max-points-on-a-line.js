@@ -17,7 +17,7 @@ var maxPoints = function(points) {
       
       // Lines are identified only with their slope 
       // because all lines share the point [x1,y1]. 
-      // Vertical lines has don't have slope, hence Infinity.
+      // Vertical lines doesn't have slope, hence Infinity.
       const line = (x2 - x1 != 0) ? (y2 - y1) / (x2 - x1) : Infinity;
       let count = 0;
       if(lines.has(line)){
